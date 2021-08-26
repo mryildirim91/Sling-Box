@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - Ground
+  - Explosion
+  - Unlaunched Box
+  - Hook
+  - Sling
+  - Waypoints
+  - Launched Box
+  - Area
+  - Destroyed Box
+  - PowerUp
+  - Missile
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Launched Box
+  - Water
+  - UI
+  - Unlaunched Box
+  - Destroyed Box
+  - Enemy2
+  - Enemy4
+  - Enemy8
+  - Enemy16
+  - Enemy32
+  - Boss Enemy
+  - Ground
+  - Area
+  - Missile
+  - Explosion
+  - Sling
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

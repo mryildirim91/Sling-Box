@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc0b79346acf8c047b4de6219a41fffa, type: 3}
+  m_Name: Sling 2
+  m_EditorClassIdentifier: 
+  _rightSprite: {fileID: 21300000, guid: 13ddd6fdd7fb3004bbfaed52d5b2e837, type: 3}
+  _leftSprite: {fileID: 21300000, guid: a4cc8a5c43723ac43b8390f7794c1422, type: 3}
+  _handleSprite: {fileID: 21300000, guid: e85cc4e3f7948f447b1f3816f710c5e3, type: 3}
