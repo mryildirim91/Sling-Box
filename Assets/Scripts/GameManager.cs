@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using GameAnalyticsSDK;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,8 +12,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        //PlayerPrefs.DeleteAll();
-        GameAnalytics.Initialize();
+
         
         if (PlayerPrefs.HasKey("Wave"))
         {
@@ -22,14 +20,11 @@ public class GameManager : MonoBehaviour
         }
 
         _level = PlayerPrefs.GetInt("Level") + 1;
-        
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Start, "Level " + _level);
     }
     
     public void GameOver()
     {
         _gameOver = true;
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Fail, "Level " + _level);
     }
 
     public void WavePassed()
@@ -41,7 +36,6 @@ public class GameManager : MonoBehaviour
 
     public void LevelComplete()
     {
-        GameAnalytics.NewProgressionEvent(GAProgressionStatus.Complete, "Level " + _level);
         _levelComplete = true;
         PlayerPrefs.SetInt("Level", PlayerPrefs.GetInt("Level") + 1);
         PlayerPrefs.SetInt("Wave", 1);
